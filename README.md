@@ -3,45 +3,62 @@
 
 一个基于 Python 的个人练手项目，用于实现招聘岗位数据的采集、清洗、存储、分析和可视化展示。
 
+---
+
 ## 项目简介
-本项目面向 Python 初学者与实习求职场景，目标是构建一个完整的小型数据分析系统。项目通过采集公开岗位样本数据，提取岗位名称、公司名称、城市、薪资、学历要求、经验要求等核心字段，并对数据进行清洗、结构化处理、数据库存储以及网页展示。
 
-## 项目目标
-- 学习 Python 数据采集与解析流程
-- 学习 pandas 数据清洗与处理
-- 学习 MySQL 数据库存储
-- 学习 Flask Web 页面开发
-- 完成一个可展示在 GitHub 和简历中的完整项目
+本项目面向 Python 学习与实习求职场景，目标是构建一个完整的小型数据分析系统。  
+项目通过采集招聘岗位样本数据，提取岗位名称、公司名称、城市、薪资、学历要求、经验要求等核心字段，并对数据进行清洗、结构化处理、MySQL 存储以及 Flask 网页展示。
 
-## 功能规划
-### V1 版本
-- [ ] 采集岗位基础数据
-- [ ] 将原始数据保存为 JSON / CSV
-- [ ] 对岗位数据进行清洗和去重
-- [ ] 将清洗后的数据存入 MySQL
-- [ ] 使用 Flask 展示岗位列表
-- [ ] 实现基础数据分析与图表可视化
+该项目主要用于展示以下能力：
 
-### 后续可扩展功能
-- [ ] 添加搜索和筛选功能
-- [ ] 添加分页功能
-- [ ] 添加更多图表分析
-- [ ] 支持定时更新数据
-- [ ] 部署到云服务器
+- Python 基础开发
+- 数据采集与处理
+- pandas 数据清洗
+- MySQL 数据库存储
+- Flask Web 开发
+- HTML / CSS 页面搭建
+- 基础数据分析与可视化
+- Git / GitHub 项目管理
+
+---
+
+## 功能介绍
+
+### 已实现功能
+
+- 招聘岗位样本数据采集
+- 原始数据保存为 JSON
+- 数据清洗与字段标准化
+- 薪资字段解析（salary_min / salary_max）
+- 清洗后数据导出为 CSV
+- MySQL 数据库存储
+- Flask 首页展示
+- 岗位列表展示
+- 关键词搜索功能
+- 城市筛选功能
+- 学历筛选功能
+- 数据分析页面
+- 城市岗位数量柱状图
+- 学历要求分布饼图
+- 平均薪资、最高薪资、最低薪资统计
+
+---
 
 ## 技术栈
-- Python 3
-- Flask
-- requests
-- BeautifulSoup4 / lxml
-- pandas
-- MySQL
-- SQLAlchemy
-- HTML
-- CSS
-- JavaScript
+
+- **Backend:** Python, Flask
+- **Database:** MySQL, SQLAlchemy, PyMySQL
+- **Data Processing:** pandas
+- **Data Source Handling:** JSON, CSV
+- **Frontend:** HTML, CSS
+- **Visualization:** pyecharts
+- **Version Control:** Git, GitHub
+
+---
 
 ## 项目结构
+
 ```text
 job-data-analysis-platform/
 │
@@ -56,7 +73,9 @@ job-data-analysis-platform/
 │
 ├── data/
 │   ├── raw/
+│   │   └── raw_jobs.json
 │   └── processed/
+│       └── clean_jobs.csv
 │
 ├── models/
 │   ├── __init__.py
