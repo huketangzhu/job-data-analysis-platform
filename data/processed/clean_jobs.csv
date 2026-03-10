@@ -1,0 +1,6 @@
+﻿job_name,company_name,city,salary,education,experience,tags,publish_time,job_url,salary_min,salary_max
+Python开发工程师,深圳云数科技有限公司,深圳,10K-15K,本科,1-3年,"Python, Flask, MySQL",2026-03-10,https://example.com/job/1,10000,15000
+数据分析助理,广州智联信息技术有限公司,广州,8K-12K,本科,应届生,"Python, pandas, Excel",2026-03-09,https://example.com/job/2,8000,12000
+Python爬虫工程师,杭州星图网络有限公司,杭州,12K-18K,大专,1-3年,"Python, Requests, Scrapy",2026-03-08,https://example.com/job/3,12000,18000
+后端开发实习生,上海青禾软件有限公司,上海,150元/天,本科,在校生,"Python, Django, SQL",2026-03-07,https://example.com/job/4,150,150
+数据处理工程师,北京数仓科技有限公司,北京,15K-20K,本科,3-5年,"Python, ETL, MySQL",2026-03-06,https://example.com/job/5,15000,20000

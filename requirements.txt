@@ -1,0 +1,8 @@
+Flask
+pandas
+requests
+beautifulsoup4
+lxml
+SQLAlchemy
+pymysql
+pyecharts

@@ -1,0 +1,77 @@
+[
+    {
+        "job_name": "Python开发工程师",
+        "company_name": "深圳云数科技有限公司",
+        "city": "深圳",
+        "salary": "10K-15K",
+        "education": "本科",
+        "experience": "1-3年",
+        "tags": [
+            "Python",
+            "Flask",
+            "MySQL"
+        ],
+        "publish_time": "2026-03-10",
+        "job_url": "https://example.com/job/1"
+    },
+    {
+        "job_name": "数据分析助理",
+        "company_name": "广州智联信息技术有限公司",
+        "city": "广州",
+        "salary": "8K-12K",
+        "education": "本科",
+        "experience": "应届生",
+        "tags": [
+            "Python",
+            "pandas",
+            "Excel"
+        ],
+        "publish_time": "2026-03-09",
+        "job_url": "https://example.com/job/2"
+    },
+    {
+        "job_name": "Python爬虫工程师",
+        "company_name": "杭州星图网络有限公司",
+        "city": "杭州",
+        "salary": "12K-18K",
+        "education": "大专",
+        "experience": "1-3年",
+        "tags": [
+            "Python",
+            "Requests",
+            "Scrapy"
+        ],
+        "publish_time": "2026-03-08",
+        "job_url": "https://example.com/job/3"
+    },
+    {
+        "job_name": "后端开发实习生",
+        "company_name": "上海青禾软件有限公司",
+        "city": "上海",
+        "salary": "150元/天",
+        "education": "本科",
+        "experience": "在校生",
+        "tags": [
+            "Python",
+            "Django",
+            "SQL"
+        ],
+        "publish_time": "2026-03-07",
+        "job_url": "https://example.com/job/4"
+    },
+    {
+        "job_name": "数据处理工程师",
+        "company_name": "北京数仓科技有限公司",
+        "city": "北京",
+        "salary": "15K-20K",
+        "education": "本科",
+        "experience": "3-5年",
+        "tags": [
+            "Python",
+            "ETL",
+            "MySQL"
+        ],
+        "publish_time": "2026-03-06",
+        "job_url": "https://example.com/job/5"
+    }
+]

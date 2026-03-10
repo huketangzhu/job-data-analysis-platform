@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}岗位列表{% endblock %}
+
+{% block content %}
+<h2>岗位列表</h2>
+
+<form method="get" action="/jobs" style="margin-bottom: 20px;">
+    <input type="text" name="keyword" placeholder="搜索岗位名称" value="{{ keyword }}">
+
+    <select name="city">
+        <option value="">全部城市</option>
+        {% for item in city_list %}
+        <option value="{{ item }}" {% if city == item %}selected{% endif %}>{{ item }}</option>
+        {% endfor %}
+    </select>
+
+    <select name="education">
+        <option value="">全部学历</option>
+        {% for item in education_list %}
+        <option value="{{ item }}" {% if education == item %}selected{% endif %}>{{ item }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit">搜索</button>
+</form>
+
+{% if jobs %}
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+        <tr>
+            <th>岗位名称</th>
+            <th>公司名称</th>
+            <th>城市</th>
+            <th>薪资</th>
+            <th>学历</th>
+            <th>经验</th>
+            <th>技能标签</th>
+            <th>岗位链接</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job.job_name }}</td>
+            <td>{{ job.company_name }}</td>
+            <td>{{ job.city }}</td>
+            <td>{{ job.salary }}</td>
+            <td>{{ job.education }}</td>
+            <td>{{ job.experience }}</td>
+            <td>{{ job.tags }}</td>
+            <td>
+            {% if job.job_url %}
+            <a href="{{ job.job_url }}" target="_blank">查看</a>
+            {% else %}
+            暂无链接
+            {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>没有找到符合条件的岗位数据。</p>
+{% endif %}
+
+{% endblock %}

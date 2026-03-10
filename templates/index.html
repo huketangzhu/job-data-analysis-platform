@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}首页{% endblock %}
+
+{% block content %}
+<h2>项目首页</h2>
+<p>这是一个基于 Python 的招聘信息采集与分析平台。</p>
+
+<div class="stats-container">
+    <div class="stat-card">
+        <h3>岗位总数</h3>
+        <p>{{ total_jobs }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>城市数量</h3>
+        <p>{{ total_cities }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>平均薪资</h3>
+        <p>{{ average_salary }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>最高平均薪资</h3>
+        <p>{{ max_salary }}</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>最低平均薪资</h3>
+        <p>{{ min_salary }}</p>
+    </div>
+</div>
+{% endblock %}

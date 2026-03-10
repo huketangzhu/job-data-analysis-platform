@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}数据分析{% endblock %}
+
+{% block content %}
+<h2>数据分析</h2>
+
+<div>
+    <h3>平均薪资</h3>
+    <p><strong>{{ average_salary }}</strong></p>
+</div>
+
+<div style="margin-top: 30px;">
+    <h3>城市岗位数量柱状图</h3>
+    {{ city_bar_html | safe }}
+</div>
+
+<div style="margin-top: 30px;">
+    <h3>学历要求分布饼图</h3>
+    {{ education_pie_html | safe }}
+</div>
+{% endblock %}
