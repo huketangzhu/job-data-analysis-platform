@@ -95,3 +95,50 @@ job-data-analysis-platform/
 │
 └── docs/
     └── project_design.md
+```
+
+---
+
+## 核心流程
+1. 使用 crawler.py 生成岗位原始样本数据
+2. 使用 clean_data.py 清洗和结构化处理数据
+3. 使用 save_to_db.py 将数据写入 MySQL
+4. 使用 app.py 提供 Flask 页面展示与分析功能
+
+---
+
+## 页面展示
+### 首页
+![首页截图](static/screenshots/index.png)
+
+### 岗位列表页
+![岗位列表页截图](static/screenshots/jobs.png)
+
+### 数据分析页
+![数据分析页截图](static/screenshots/analysis.png)
+
+---
+
+## 环境要求
+- Python 3.11+ 或 3.12+
+- MySQL 8.x
+- pip
+- Windows / macOS / Linux
+
+---
+
+## 项目亮点
+
+- 独立完成从数据样本生成、清洗、入库到网页展示的完整流程
+- 使用 pandas 对薪资字段进行解析和结构化处理
+- 使用 MySQL 存储结构化岗位数据
+- 使用 Flask 实现数据展示和条件筛选
+- 使用 pyecharts 实现基础可视化分析
+- 项目具备较完整的后端、数据库和前端展示链路
+
+---
+
+## 作者
+
+- GitHub: 胡刻堂主
+- Email: 2225418643@qq.com
